@@ -8,18 +8,47 @@
 </head>
 <body>
     <form>
-        <label for="username">Username : </label>
-        <input type="text" id="username">
-        <br>
-        <label for="password">Password :</label>
-        <input type="password" id="password">
-        <br>
-        <input type="radio" id="male" name="gender"><label for="male">Male</label>
-        <input type="radio" id="female" name="gender"><label for="female">Female</label>
-        <br>
-        <input type="checkbox" id="singing"><label for="singing">Singing</label>
-        <input type="checkbox" id="dancing"><label for="dancing">Dancing</label>
-        <input type="checkbox" id="coding"><label for="coding">Coding</label>
+        <table border="0" cellspacing="0" cellpadding="5">
+            <tr>
+                <td align="right"><label for="username">Username : </label></td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="password">Password :</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td align="right">Gender :</td>
+                <td>
+                    <input type="radio" id="male" name="gender"><label for="male">Male</label>
+                    <input type="radio" id="female" name="gender"><label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Hobby :</td>
+                <td>
+                    <input type="checkbox" id="singing"><label for="singing">Singing</label>
+                    <input type="checkbox" id="dancing"><label for="dancing">Dancing</label>
+                    <input type="checkbox" id="coding"><label for="coding">Coding</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Comment :</td align>
+                <td><textarea cols="32" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right">Age :</td>
+                <td>
+                    <select>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Send</button>
     </form>
 </body>
 </html>
